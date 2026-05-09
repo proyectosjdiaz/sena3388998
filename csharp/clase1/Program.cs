@@ -1,1 +1,2 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Sistema de Productos");
+Console.WriteLine("Iniciando aplicación...");
