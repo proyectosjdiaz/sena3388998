@@ -21,3 +21,21 @@ var nombres = productos.Select(p => p.Nombre).ToList();
  
 // Contar cuántos productos cuestan más de 100.000
 int cantidadCaros = productos.Count(p => p.Precio > 100000m);
+
+
+public class Producto
+{
+    public string Nombre { get; set; }
+    public decimal Precio { get; set; }
+ 
+    public Producto(string nombre, decimal precio)
+    {
+        Nombre = nombre;
+        Precio = precio;
+    }
+ 
+    public void MostrarInformacion()
+    {
+        Console.WriteLine($"Producto: {Nombre} - Precio: {Precio:C}");
+    }
+}
